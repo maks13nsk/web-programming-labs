@@ -26,6 +26,9 @@ footer {
     padding: 10px;
     font-size: 16pt;
     text-align: right;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
 }
 footer:hover{
     color: white;
@@ -41,8 +44,8 @@ a{
     transition: 2s;
 }
 a:visited{
-    color: white;
-    background-color: green;
+    color: lightgreen;
+    text-decoration: underline;
 
 }
 
