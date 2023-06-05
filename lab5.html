@@ -15,7 +15,30 @@
             let result = a + b;
             alert('Сумма ' + a + ' и ' + b + ' равна ' + result);
         }
-        {
+        function showDiff(){
+            let inputA = document.getElementById('NumberA')
+            let inputB = document.getElementById('NumberB')
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a - b;
+            alert('Разность ' + a + ' и ' + b + ' равна ' + result);
+        }
+        function showUm(){
+            let inputA = document.getElementById('NumberA')
+            let inputB = document.getElementById('NumberB')
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a * b;
+            alert('Произвдение ' + a + ' и ' + b + ' равно ' + result);
+        }
+        function showDel(){
+            let inputA = document.getElementById('NumberA')
+            let inputB = document.getElementById('NumberB')
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let result = a / b;
+            alert('Деление ' + a + ' и ' + b + ' равно ' + result);
+        }
         function showAuthor()  
             let author = 'Здравствуйте, данная страница является лучшей.\nАвтор страницы:\nАнциферов Максим Дмитриевич'
             alert(author)
@@ -35,13 +58,16 @@
 
 <body>
     <header onclick="showAuthor()">
-        НГТУ, ФБ, Лабораторная работа 4
+        НГТУ, ФБ, Лабораторная работа 5
     </header>
 
     <main>
         <lable>Первое число: <input type="number" value="5154" id="NumberA"></lable><br>
         <lable>Второе число: <input type="number" value="7891" id="NumberB"></lable><br>
         <div class="message" onclick="showSum()">Найти сумму чисел</div>
+        <div class="message" onclick="showDiff()">Найти разность чисел</div>
+        <div class="message" onclick="showUm()">Найти произведение чисел</div>
+        <div class="message" onclick="showDel()">Найти деление чисел</div>
         <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
     </main>
 
