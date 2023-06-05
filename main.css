@@ -20,6 +20,11 @@ footer {
     text-align: right;
 }
 
+a{
+    text-decoration: none;
+    color: green;
+    transition: 2s;
+}
 a:visited{
     color: white;
     background-color: green;
@@ -31,9 +36,11 @@ a:hover {
     text-decoration: underline;
     background-color: white;
     font-weight: bold;
+    text-shadow: 2.5px 1.5px 2px gray;
+    transition: 0.3s;
 }
 
 a:active {
     color: pink;
-    background-color: green;}
-    
+    background-color: green;
+}
