@@ -48,7 +48,20 @@
             output.style.backgroundColor = backColor;
             output.style.color = textColor;
         }
-    </script>
+        function sumKorzina() {
+            let inputA = document.getElementById('Apple')
+            let inputB = document.getElementById('Pear')
+            let inputC = document.getElementById('Orange')
+            let inputD = document.getElementById('Melon')
+            let a = parseInt(inputA.value);
+            let b = parseInt(inputB.value);
+            let c = parseInt(inputC.value);
+            let d = parseInt(inputD.value);
+            let result1 = 100 * a + 80*b + 150*c + 300*d;
+            let output = document.getElementById('result1');
+            output.innerHTML = 'Итого: ' + result1;
+        }   
+   </script>
     <style>
         .message{
             cursor: pointer;
@@ -63,7 +76,14 @@
             width: 300px;
             height: 40px;
         }
-    </style>
+        .korzina{
+            border: 1px solid;
+            border-radius: 7px;
+            padding: 7px;
+            width: 250px;
+            margin: 10px;
+        }
+   </style>
 </head>
 
 <body>
@@ -81,12 +101,33 @@
         <div class="message" onclick="showAuthor()">Узнать, кто автор страницы</div>
         <div>
             <input type="button" value="Кнопка 1" onclick="changeOutput(1, 'red', 'yellow')">
-            <input type="button" value="Кнопка 2" onclick="changeOutput(1, 'blue', 'white')">
-            <input type="button" value="Кнопка 3" onclick="changeOutput(1, 'pink', 'black')">
-            <input type="button" value="Кнопка 4" onclick="changeOutput(1, 'yellow', 'green')">
+            <input type="button" value="Кнопка 2" onclick="changeOutput(2, 'blue', 'white')">
+            <input type="button" value="Кнопка 3" onclick="changeOutput(3, 'pink', 'black')">
+            <input type="button" value="Кнопка 4" onclick="changeOutput(4, 'yellow', 'green')">
         </div>
 
         <div id="output"></div>
+        <div class="korzina">
+            <h2>Корзина товаров:</h2>
+            <div> Яблоки (100р/шт)
+                <input type="number" value="1" id="Apple"><br>
+            </div>
+            <div> Груши (80р/шт)
+                <input type="number" value="1" id="Pear"><br>
+              </div>
+              <div> Апельсины (150р/шт)
+                <input type="number" value="1" id="Orange"><br>
+              </div>
+              <div> Дыни (300р/шт)
+                <input type="number" value="1" id="Melon"><br>
+              </div>
+            <input type="button" value="Рассчитать" onclick="sumKorzina()">
+            <div id="result1"></div>
+
+
+
+          </div>
+
     </main>
 
     <footer onclick="showAuthor()">
