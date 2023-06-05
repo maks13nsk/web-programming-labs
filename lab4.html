@@ -24,7 +24,7 @@
             z-index: 1;
             left: 380px;
             top: 120px;
-            position: fixed;
+            position: absolute;
         }
         .second:hover{
             z-index: 3;
@@ -34,7 +34,7 @@
             left: 0;
             width: 300px;
             background: black;
-            height: 90%;
+            height: 100%;
             overflow-y: auto;
             overflow-x: hidden;
         }
@@ -46,7 +46,20 @@
         }
         main{
             margin-left: 320px;
-        }   
+        } 
+        .pic{
+            position: absolute;
+        }
+        .comics{
+            background-color: white;
+            border-radius: 50%;
+            text-align: middle; 
+            z-index: -1;
+            box-shadow: 2.5px 1.5px 2px gray;
+        }
+        .pic:hover{
+            z-index: -1
+        }  
     </style>        
 </head>
 <body>
@@ -84,7 +97,7 @@
             Что такое информационные технологии 19 века? Как Гитлер выплачивал пенсии? Кто сделал чемодан на колёсиках?
             Казалось бы, ерунда. Но, скажу вам по секрету, всё это важно.
         </div>
-        <div class="second"></div>
+        <div class="second">
             Во второй главе я подробно рассказываю о том, откуда взялись акции и корпорации,
             чтобы вы поняли базовую идею организации современной большой компании — типа Apple или Google.
             Как было у римлян, у генуэзских купцов и у английской королевы, кто кормил гусей,
@@ -102,7 +115,7 @@
             Что андеррайтеры называют красной селёдкой и чем они похожи на организаторов концерта Стаса Михайлова?
             Все эти тайны будут раскрыты.
         </div>
-
+        
     </main>
 
     <footer>
