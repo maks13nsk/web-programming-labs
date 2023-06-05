@@ -6,20 +6,35 @@ body {
 }
 
 header {
-    background-color: black;
+    background: linear-gradient(to right, red,orange,yellow, green,LightBlue, blue, purple);
     color: lightgreen;
     padding: 10px;
     font-size: 16pt;
 }
+header:hover {
+    text-decoration: none;
+    color: white;
+    transition: 300ms;
+}
 
+header:active{
+    font-size: 20pt;
+}
 footer {
-    background-color: black;
+    background: linear-gradient(to right, red,orange,yellow, green,LightBlue, blue, purple);
     color: lightgreen;
     padding: 10px;
     font-size: 16pt;
     text-align: right;
 }
+footer:hover{
+    color: white;
+    transition: 300ms;
+}
 
+footer:active{
+    font-size: 20pt;
+}   
 a{
     text-decoration: none;
     color: green;
