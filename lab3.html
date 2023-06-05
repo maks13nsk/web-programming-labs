@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <style>
          header {
-            background: linear-gradient(to right bottom, red,orange,yellow, green,LightBlue, blue, purple);
+            background: linear-gradient(to right, red,orange,yellow, green,LightBlue, blue, purple);
             color: lightgreen;
             padding: 10px;
             font-size: 16pt;
@@ -47,9 +47,22 @@
             color: darkblue;
         }
         .shadow {
-            text-shadow: 5px 5px 2px gray;
-
+            text-shadow: 1.5px 1.5px 2px gray;
         }
+        .shadowblue {
+            text-shadow: -1.5px 2px 2px blue;
+        }
+        .blueblur {
+            text-shadow: 0px 0px 2px blue;
+        }
+        .shadowms {
+            transition: 300ms 1.5s;
+        }
+        .shadowms:hover{
+            text-shadow: 2.5px 1.5px 2px gray;
+        }
+
+        
    </style>
 </head>
 <body>
@@ -58,7 +71,7 @@
     </header>
 
     <main>
-        <h1>Расчет (формула)</h1>
+        <h1 class="shadowms">Расчет (формула)</h1>
 
         <div>
         Расчет сводится к определению разницы между активами и пассивами
@@ -111,6 +124,8 @@
         </div>
         
         <div class="shadow">Тень</div>
+        <div class="shadowblue">Синяя тень слева снизу</div>
+        <div class="blueblur">Синее размытие</div>
     </main>
 </body>
 </html>
