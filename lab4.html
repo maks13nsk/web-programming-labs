@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Панченко Егор Михайлович. Лабораторная работа 4</title>
+    <title>Анциферов Максим Дмитриевич. Лабораторная работа 4</title>
     <link rel="stylesheet" href="main.css">
     <style>
         div{
@@ -16,6 +16,18 @@
             height: 100px;
             overflow-y: auto;
             overflow-x: hidden;
+            position: relative;
+            background-color: pink;
+            z-index: 2;
+        }
+        .second{
+            z-index: 1;
+            left: 380px;
+            top: 120px;
+            position: fixed;
+        }
+        .second:hover{
+            z-index: 3;
         }
     </style>        
 </head>
@@ -33,7 +45,7 @@
             Что такое информационные технологии 19 века? Как Гитлер выплачивал пенсии? Кто сделал чемодан на колёсиках?
             Казалось бы, ерунда. Но, скажу вам по секрету, всё это важно.
         </div>
-        <div>
+        <div class="second"></div>
             Во второй главе я подробно рассказываю о том, откуда взялись акции и корпорации,
             чтобы вы поняли базовую идею организации современной большой компании — типа Apple или Google.
             Как было у римлян, у генуэзских купцов и у английской королевы, кто кормил гусей,
