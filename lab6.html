@@ -61,7 +61,13 @@
              border: 2px solid red;
              border-radius: 10px;
          }
-        
+         #wear {
+             width: 500px;
+             height: auto;
+         }
+         <div id="myBlock" onclick="increaseWidth()">
+            Расширение
+        </div>
     </style>
 
     <script>
@@ -226,9 +232,33 @@
         <div id="moving-block" onclick="moveBlock()">
             Щёлкни меня
         </div>
+
+        <p>&nbsp;&nbsp;</p>
         <div id="myBlock" onclick="increaseWidth()">
             Расширение
         </div>
+        <p>&nbsp;&nbsp;</p>
+        <div style="margin-top: 50px;">
+            Цвет одежды:
+            <select id="wear-color">
+                <option>Красный</option>
+                <option>Белый</option>
+                <option>Черный</option>
+            </select>
+
+            Тип одежды:
+            <select id="wear-type">
+            <option>Футболка</option>
+            <option>Поло</option>
+            <option>Майка</option>
+            </select>
+
+        </div>
+
+       <div><button onclick="filter()">OK</button></div>
+
+       <div><img id="wear" style="background-color: gray;"></div>
+        
     </main>
 
     <footer>
