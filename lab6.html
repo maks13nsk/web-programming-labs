@@ -44,12 +44,22 @@
              background-color: aquamarine;
              width: 150px;
              height: 150px;
-             margin-top: 30px;
+             margin: 0px 0px 0px 30px;
              text-align: center;
              line-height: 150px;
              cursor: pointer;
              border: 2px solid green;
              border-radius: 10%;
+         }
+         #myBlock {
+             width: 100px;
+             cursor: pointer;
+             background-color: pink;
+             margin-top: 230px;
+
+             text-align: center;
+             border: 2px solid red;
+             border-radius: 10px;
          }
         
     </style>
@@ -149,7 +159,18 @@
                 document.getElementById('color-name').innerHTML = 'желтый';
                 div.style.color = 'black'
             }
+            function increaseWidth() {
+             const block = document.getElementById("myBlock");
+             const currentWidth = parseInt(block.style.width);
+             const newWidth = currentWidth + 50;
+             if (newWidth <= 1000) {
+             block.style.width = newWidth + "px";
+             } else {
+             block.style.width = "100px";
+             }
+         }
     </script>
+
 
 </head>
 <body>
@@ -204,6 +225,9 @@
         </div>
         <div id="moving-block" onclick="moveBlock()">
             Щёлкни меня
+        </div>
+        <div id="myBlock" onclick="increaseWidth()">
+            Расширение
         </div>
     </main>
 
